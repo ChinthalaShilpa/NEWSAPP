@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: NEWSAPP-NEWS-PROVIDER-SERVICE
+  config:
+    import: configserver:http://localhost:8888
+  doc:
+    swagger-ui:
+      path: /swagger-ui
+
+newsapp:
+  api:
+    url: https://news67.p.rapidapi.com/v2/topic-search?languages=en&search=
+    apikey: f7b7610e6amsh5de2559ee640f2dp1c72d3jsn4c009aca775d
+#    apikey: 15cf8c1829msh6512b6b75c04450p1a83b8jsn9a2c24e0cbc3
+    apihost: news67.p.rapidapi.com
+
+server:
+  port: 8082

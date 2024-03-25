@@ -1,0 +1,217 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "sports": [
+    {
+      "Title": "Conor McGregor 'is trying to wait me out', claims Michael Chandler... as American admits frustration over delays to huge clash and targets 'dream scenario' at UFC 300",
+      "Source": "dailymail.co.uk",
+      "Url": "https://www.dailymail.co.uk/sport/mma/article-12826989/Conor-McGregor-trying-wait-claims-Michael-Chandler-American-admits-frustration-delays-huge-clash-targets-dream-scenario-UFC-300.html#comments",
+      "PublishedOn": "2023-12-05T10:15:08.000Z",
+      "Description": "Michael Chandler has admitted his frustration at the lack of movement of his planned fight with Conor McGregor.  The American has had to bide his time and be patient.",
+      "Language": "en",
+      "Image": "https://i.dailymail.co.uk/1s/2023/12/05/10/76454785-0-image-m-42_1701771212578.jpg",
+      "SourceNationality": "gb",
+      "TitleSentiment": {
+        "sentiment": "negative",
+        "score": -0.78
+      },
+      "Summary": "Michael Chandler has admitted his frustration at the lack of movement of his planned fight with Conor McGregor. I’ve seen Conor talk, completely dismiss me and act like to fight with me isn’t happening.",
+      "Countries": [
+        "us"
+      ],
+      "Categories": {
+        "label": "sport",
+        "IPTCCode": "medtop:15000000"
+      }
+    },
+    {
+      "Title": "Man United fan Helen Housby idolised David Beckham growing up... but now the England netball star loves inspiring the next generation herself as she gets a Sky Sports Editions cover shoot",
+      "Source": "dailymail.co.uk",
+      "Url": "http://www.dailymail.co.uk/sport/othersports/article-12826959/Man-United-fan-Helen-Housby-idolised-David-Beckham-England-netball-star-Sky-Sports-Editions.html",
+      "PublishedOn": "2023-12-05T09:46:34.000Z",
+      "Description": "England are set to take on South Africa in the three-match Vitality Netball International Series, with the first encounter taking place in Manchester on Tuesday night.",
+      "Language": "en",
+      "Image": "https://i.dailymail.co.uk/1s/2023/12/05/09/78587645-0-image-m-30_1701768914041.jpg",
+      "SourceNationality": "gb",
+      "TitleSentiment": {
+        "sentiment": "positive",
+        "score": 0.91
+      },
+      "Summary": "England netball star Helen Housby is relishing her role model status for women's sport as she became the latest athlete to get a Sky Sports Editions cover shoot. Housby, an avid Manchester United fan, grew up idolising David Beckham but now finds herself inspiring the next generation following the exponential growth in the popularity of women's sport.",
+      "Countries": [
+        "gb",
+        "au",
+        "za"
+      ],
+      "Categories": {
+        "label": "Jai Alai (Pelota)",
+        "IPTCCode": "medtop:20000968"
+      }
+    },
+    {
+      "Title": "RCB skipper Smriti Mandhana bats for multi-city format in WPL",
+      "Source": "punjabnewsexpress.com",
+      "Url": "http://punjabnewsexpress.com/sports/news/rcb-skipper-smriti-mandhana-bats-for-multi-city-format-in-wpl-231480",
+      "PublishedOn": "2023-12-05T08:14:52.372Z",
+      "Description": "RCB women’s team captain Smriti Mandhana shared her perspectives on the potential impact of a multi-city format for the Women's Premier League (WPL) while speaking at the RCB Innovation Lab’s Leaders Meet India, here.",
+      "Language": "en",
+      "Image": "https://www.punjabnewsexpress.com/images/article/article231480.jpg",
+      "SourceNationality": "in",
+      "TitleSentiment": {
+        "sentiment": "positive",
+        "score": 0.92
+      },
+      "Summary": "While reflecting on the success of the WPL, Smriti Mandhana expressed enthusiasm for the prospect of adopting a multi-city format at the first-of-its-kind summit that brought together influential leaders from various industries to delve into the future of sports. That is something which is one step ahead for us that it (multi-city format) can reach to places where women's cricket hasn't reached and to get new audience going into women's cricket, ” Mandhana commented.",
+      "Countries": [
+        "in"
+      ],
+      "Categories": {
+        "label": "cricket",
+        "IPTCCode": "medtop:20000888"
+      }
+    }
+  ],
+  "politics":[
+    {
+      "Title": "Revanth to follow Siddaramaiah ‘zero traffic protocol’ in Hyd",
+      "Source": "thehansindia.com",
+      "Url": "http://www.thehansindia.com/news/cities/hyderabad/revanth-to-follow-siddaramaiah-zero-traffic-protocol-in-hyd-844619",
+      "PublishedOn": "2023-12-16T03:03:57.000Z",
+      "Description": "The number of vehicles in the CM convoy has already been reduced to 9 from 15",
+      "Language": "en",
+      "Image": "https://assets.thehansindia.com/h-upload/2023/12/16/1407080-zero-traffic-protocol.jpg",
+      "SourceNationality": "in",
+      "TitleSentiment": {
+        "sentiment": "positive",
+        "score": 0.52
+      },
+      "Summary": "The CM asked DGP Ravi Gupta and other police officials to avoid any trouble for the common people while the CM convoy was on its way on the busy roads. He advised the police officials to take alternative measures to prevent traffic jams and not stop vehicular traffic along his travelling routes.",
+      "Countries": [],
+      "Categories": {
+        "label": "traffic",
+        "IPTCCode": "medtop:20000342"
+      }
+    },
+    {
+      "Title": "CM offers govt job to former DSP and Telangana activist Nalini",
+      "Source": "thehansindia.com",
+      "Url": "http://www.thehansindia.com/news/cities/hyderabad/cm-offers-govt-job-to-former-dsp-and-telangana-activist-nalini-844637",
+      "PublishedOn": "2023-12-16T04:02:25.000Z",
+      "Description": "Hyderabad: Former DSP Nalini Reddy, who sacrificed her top police job for the cause of Telangana during the second phase intensive Telangana movement,   is likely to get her job soon.  Chief Minister...",
+      "Language": "en",
+      "Image": "https://assets.thehansindia.com/h-upload/2023/12/16/1407097-revanth.jpg",
+      "SourceNationality": "in",
+      "TitleSentiment": {
+        "sentiment": "positive",
+        "score": 0.98
+      },
+      "Summary": "Chief Minister A Revanth Reddy decided to induct Nalini into the government services and instructed the officials to find out the ways for the same. The CM ordered the Chief Secretary and DGP to take necessary measures to join Nalini in the services if she is interested.",
+      "Countries": [],
+      "Categories": {
+        "label": "minister and secretary (government)",
+        "IPTCCode": "medtop:20000613"
+      }
+    },
+    {
+      "Title": "Top news developments from Telangana today",
+      "Source": "thehindu.com",
+      "Url": "https://www.thehindu.com/news/national/telangana/top-news-developments-from-telangana-today/article67644335.ece",
+      "PublishedOn": "2023-12-16T04:06:13.000Z",
+      "Description": "Here are the key news developments to watch out from Telangana today December 16, 2023",
+      "Language": "en",
+      "Image": "https://th-i.thgim.com/public/incoming/97x5nk/article67644344.ece/alternates/LANDSCAPE_1200/20231214148L.jpg",
+      "SourceNationality": "in",
+      "TitleSentiment": {
+        "sentiment": "positive",
+        "score": 0.57
+      },
+      "Summary": "Auto drivers union say that the free bus travel facility for women is making their life difficult. The event is back after a two-year hiatus.",
+      "Countries": [],
+      "Categories": {
+        "label": "crime, law and justice",
+        "IPTCCode": "medtop:02000000"
+      }
+    }
+  ],
+  "bollywood":[
+    {
+      "Title": "Sushant Singh Rajput death case: Rhea Chakraborty moves Bombay HC against CBI lookout circular",
+      "Source": "thehindu.com",
+      "Url": "https://www.thehindu.com/news/cities/mumbai/sushant-singh-rajput-death-case-rhea-chakraborty-moves-bombay-hc-against-cbi-lookout-circular/article67641835.ece",
+      "PublishedOn": "2023-12-15T13:04:20.000Z",
+      "Description": "Rhea Chakraborty moves Bombay HC challenging CBI's lookout circular in Sushant Singh Rajput death case.",
+      "Language": "en",
+      "Image": "https://th-i.thgim.com/public/incoming/uuc33t/article67641954.ece/alternates/LANDSCAPE_1200/IMG_18BM_RHEA_2_1_MB8CVE06.jpg",
+      "SourceNationality": "in",
+      "TitleSentiment": {
+        "sentiment": "negative",
+        "score": -0.51
+      },
+      "Summary": "Rajput was found dead in his apartment in suburban Bandra on June 14, 2020, and his father had, in July that year, lodged a complaint with Bihar police accusing Chakraborty, the actor's then girlfriend, and her kin of abetting his suicide. In September this year, the HC temporarily suspended the circular issued against Showik enabling him to travel abroad.",
+      "Countries": [],
+      "Categories": {
+        "label": "religion and belief",
+        "IPTCCode": "medtop:12000000"
+      }
+    },
+    {
+      "Title": "Aishwarya Rai leaves Bachchan House amid rumours of divorce from Abhishek, reports Indian media",
+      "Source": "en.dailypakistan.com.pk",
+      "Url": "https://en.dailypakistan.com.pk/15-Dec-2023/aishwarya-rai-leaves-bachchan-house-amid-rumours-of-divorce-from-abhishek-reports-indian-media",
+      "PublishedOn": "2023-12-15T18:03:18.000Z",
+      "Description": "Indian media reports say that former Miss World and Bollywood actress Aishwarya Rai Bachchan has left the Bachchan House amid reports of her divorce from Abhishek",
+      "Language": "en",
+      "Image": "https://en.dailypakistan.com.pk/digital_images/large/2023-12-15/aishwarya-rai-leaves-bachchan-house-amid-rumours-of-divorce-from-abhishek-bachchan-1702662563-5982.jpg",
+      "SourceNationality": "pk",
+      "TitleSentiment": {
+        "sentiment": "negative",
+        "score": -0.54
+      },
+      "Summary": "The reports of divorce between Aishwarya Rai and Abhishek Bachchan have been making rounds for quite sometime now. This public appearance of the star couple laid to rest the rumours about their divorce.",
+      "Countries": [
+        "in"
+      ],
+      "Categories": {
+        "label": "religion and belief",
+        "IPTCCode": "medtop:12000000"
+      }
+    },
+    {
+      "Title": "Sunny Deol On Animal: \"Very Happy For Bobby But Didn't Like Certain Things\"",
+      "Source": "ndtv.com",
+      "Url": "https://www.ndtv.com/entertainment/very-happy-for-bobby-but-didnt-like-certain-things-in-animal-sunny-deol-4679221",
+      "PublishedOn": "2023-12-16T06:53:16.000Z",
+      "Description": "\"There are certain things that I did not like, which I don't like in many films including my own,\" said Sunny Deol",
+      "Language": "en",
+      "Image": "https://c.ndtvimg.com/2023-12/aeq7bemg_sunny-deol_625x300_16_December_23.jpg",
+      "SourceNationality": "in",
+      "TitleSentiment": {
+        "sentiment": "positive",
+        "score": 0.8
+      },
+      "Summary": "Sunny believes no film is without flaws and every director has a vision for a movie. So, me not liking it is not the reason that the person is not good at his job.",
+      "Countries": [
+        "in"
+      ],
+      "Categories": {
+        "label": "human interest",
+        "IPTCCode": "medtop:08000000"
+      }
+    }
+  ]
+}

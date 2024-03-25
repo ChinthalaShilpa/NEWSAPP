@@ -1,0 +1,14 @@
+body{
+	font-family: 'Jost', sans-serif;
+	/* background-image: '../src/assets/backgroung-img.png'; */
+	/* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+}
+html, body { height: 100%; }
+body, html {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

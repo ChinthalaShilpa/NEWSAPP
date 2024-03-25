@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: NEWSAPP-WISHLIST-SERVICE
+  config:
+    import: configserver:http://localhost:8888
+  data:
+    mongodb:
+      #uri: mongodb://localhost:27017
+      uri: mongodb+srv://chinthala1999:Shilpa@123@clustershilpa.y03hbcw.mongodb.net/?retryWrites=true&w=majority
+      database: newsappproject
+  doc:
+    swagger-ui:
+      path: /custom-swagger-ui
+
+server:
+  port: 8083

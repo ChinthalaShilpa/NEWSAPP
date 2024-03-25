@@ -1,0 +1,80 @@
+<div class="container col-xl-12 col-lg-12 col-md-12">
+    <div class="main">  	
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form #signupForm="ngForm" (ngSubmit)="signUp(signupForm)">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" 
+                    class="form-control" 
+                    name="userName" 
+                    #sUserName="ngModel"
+                    placeholder="User Name"  
+                    [(ngModel)]="user.userName" 
+                    minlength="6" 
+                    required>
+                <span *ngIf="sUserName.touched && sUserName.invalid">
+                    Please enter a valid user name.
+                </span>
+                <input type="email" 
+                    class="form-control" 
+                    name="email"
+                    #sEmail="ngModel" 
+                    placeholder="Email"  
+                    [(ngModel)]="user.email" 
+                    email
+                    required>
+                <span *ngIf="sEmail.touched && sEmail.invalid">
+                    Please enter a valid email.
+                </span>
+                <input type="password" 
+                    class="form-control" 
+                    name="password" 
+                    #sPassword="ngModel"
+                    placeholder="Password" 
+                    [(ngModel)]="user.password" 
+                    minlength="6" 
+                    required>
+                <span *ngIf="sPassword.touched && sPassword.invalid">
+                    Please enter a valid password.
+                </span>
+                <button type="submit" [disabled]="signupForm.invalid">Sign up</button>
+            </form>
+            <div class="error" *ngIf="sErrorMessage.length>0">
+                {{sErrorMessage}}
+            </div>
+            <div class="success" *ngIf="sErrorMessage.length>0">
+                {{sSuccessMessage}}
+            </div>
+        </div>
+    
+        <div class="login">
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" 
+                    name="lUserName" 
+                    #lUserName="ngModel"
+                    placeholder="User Name" 
+                    [(ngModel)]="userRequest.userName"
+                    minlength="6"
+                    required>
+                <span *ngIf="lUserName.touched && lUserName.invalid">
+                    Please enter a valid user name.
+                </span>
+                <input type="password" 
+                    name="lPassword" 
+                    #lPassword="ngModel"
+                    placeholder="Password" 
+                    [(ngModel)]="userRequest.password" 
+                    minlength="6"
+                    required>
+                <span *ngIf="lPassword.touched && lPassword.invalid">
+                    Please enter a valid password.
+                </span>
+                <button type="submit" [disabled]="loginForm.invalid">Login</button>
+            </form>
+            <div class="error" *ngIf="lErrorMessage.length>0">
+                {{lErrorMessage}}
+            </div>
+        </div>
+    </div>
+</div>

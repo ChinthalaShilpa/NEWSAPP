@@ -1,0 +1,74 @@
+created jar files ,docker file for eureka,newsappconfig and user microservice and pushe those to docker(for this i create docker image for every microservices)
+
+EUREKA
+
+step1:opened ecs navigate to task definations created eureka-task by giving below details
+     Task definition family as eureka-task
+     In Container details Name as eureka-container,Image Uri as shilpachinthala/eurekaserver:latest(which is docker image for eureka)
+     Container port  as 8761
+
+step2: navigate to clusters and created cluster by giving below details
+       Cluster name as newsapp-cluster and clicked on create
+
+step3: opened that creater newsapp-cluster and given below details for creating eureka-service   
+       in task defination i gave family as eureka-task
+       service name as eureka-service
+       navigate to networking and given VPC 
+       in security group select create new security group and security group name as eureka-sg,Security group description as eureka-sg
+       In Inbound rules for security groups i gave Type as Custom TCP,port as 8761,source as Anywhere then clicked on add rule then given Type as
+       HTTP,source as Anywhere
+       navigate to Load balancer and given Load balancer type as Application Load balancer,and selected Create new load balancer 
+       and load balancer name as  newsapp-lb,in Listener i gave port as 8761,in target group i gave Target group name as newsapp-tg
+       then clicked on create. 
+
+step4: navigated to the load balancer newsapp-lb and opened security in that i clicked on security group then i edited inbound security as All traffic.
+
+NEWSAPPCONFIG
+
+step1:opened ecs navigate to task definations created config-task by giving below details
+     Task definition family as config-task
+     In Container details Name as config-container,Image Uri as shilpachinthala/newsconfigserver:latest(which is docker image for newsappconfig)
+     Container port  as 8888
+
+step2: navigate to clusters and created cluster by giving below details
+       opened that creater newsapp-cluster and given below details for creating config-service   
+       in task defination i gave family as config-task
+       service name as config-service
+       navigate to networking and given VPC 
+       in security group select create new security group and security group name as config-sg,Security group description as config-sg
+       In Inbound rules for security groups i gave Type as Custom TCP,port as 8888,source as Anywhere then clicked on add rule then given Type as
+       HTTP,source as Anywhere
+       navigate to Load balancer and given Load balancer type as Application Load balancer,and selected Use an existing load balancer 
+       and given load balancer as newsapp-lb,in Listener i gave port as 8888,in target group i gave Target group name as config-tg 
+       and health check path as /application/default 
+       then clicked on create. 
+
+
+USER
+step1:created EC2 and on that EC2 i installed the kafka and also attached elastic IP
+
+step2:opened ecs navigate to task definations created config-task by giving below details
+     Task definition family as user-task
+     In Container details Name as user-container,Image Uri as shilpachinthala/userprofile:latest(which is docker image for userprofile)
+     Container port  as 8082
+
+step3: navigate to clusters and created cluster by giving below details
+       opened that creater newsapp-cluster and given below details for creating user-service   
+       in task defination i gave family as user-task
+       service name as user-service
+       navigate to networking and given VPC 
+       in security group select create new security group and security group name as user-sg,Security group description as user-sg
+       In Inbound rules for security groups i gave Type as Custom TCP,port as 8082,source as Anywhere then clicked on add rule then given Type as
+       HTTP,source as Anywhere
+       navigate to Load balancer and given Load balancer type as Application Load balancer,and selected Use an existing load balancer 
+       and given load balancer as newsapp-lb,in Listener i gave port as 8082,in target group i gave Target group name as user-tg 
+       and health check path as /swagger-ui/index.html 
+       then clicked on create. 
+
+After all these steps i am navigated to load balancer newsapp-lb then copied DNS and checked the ouput in browser 
+
+
+FRONTEND
+created s3 bucket and uploaded dist folder,then i copied static website hosting and runned in browser.
+
+

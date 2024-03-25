@@ -1,0 +1,36 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: newsapp-api-gateway
+#  main:
+#    allow-bean-definition-overriding: true
+  config:
+    import: configserver:http://localhost:8888
+  cloud:
+    gateway:
+      routes:
+        - id: NEWSAPP-AUTH-SERVICE
+          uri: lb://NEWSAPP-AUTH-SERVICE
+          predicates:
+            - Path=/api/v1.0/auth/**
+          filters:
+            - name: Cors
+              args:
+                allowedOrigins: "http://localhost:4200"
+        - id: NEWSAPP-NEWS-PROVIDER-SERVICE
+          uri: lb://NEWSAPP-NEWS-PROVIDER-SERVICE
+          predicates:
+            - Path=/api/v1.0/news/**
+        - id: NEWSAPP-USER-PROFILE-SERVICE
+          uri: lb://NEWSAPP-USER-PROFILE-SERVICE
+          predicates:
+            - Path=/api/v1.0/user/**
+        - id: NEWSAPP-WISHLIST-SERVICE
+          uri: lb://NEWSAPP-WISHLIST-SERVICE
+          predicates:
+            - Path=/api/v1.0/wishlist/**
+
+
+

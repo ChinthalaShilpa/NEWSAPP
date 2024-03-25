@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: NEWSAPP-CONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ChinthalaShilpa/config-server-example
+          clone-on-start: true
+eureka:
+    client:
+      service-url:
+        defaultZone: http://newapp-lb-1016212984.us-east-1.elb.amazonaws.com:8761/eureka/

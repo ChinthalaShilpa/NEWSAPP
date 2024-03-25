@@ -1,0 +1,13 @@
+<div class="container">
+    <mat-accordion>
+        <mat-expansion-panel class="panel" *ngFor="let newsItem of articlesWishListed">
+            <mat-expansion-panel-header>
+                {{ newsItem.Title }}
+            </mat-expansion-panel-header>
+            <img mat-card-image class="panel-img" [src]="newsItem.Image" alt="{{ newsItem.Title }}">
+            <p>{{ newsItem.Summary }}</p>
+            <p>Published On: {{ newsItem.PublishedOn | date }}</p>
+            <a mat-button color="primary" [href]="newsItem.Url" target="_blank">Read more</a>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
